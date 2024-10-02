@@ -62,7 +62,7 @@ import Products from '../../components/Product'
                     >
                         {product.descripcion}
                     </Text>
-                    <Flex alignItems={'end'}>
+                    <Flex flexGrow={1} alignItems={'end'}>
                         <Button
                             rounded={'md'} w={'full'} size={'lg'} py={'3'}
                             bg={useColorModeValue('gray.900', 'gray.50')}
