@@ -13,7 +13,7 @@ import {data} from '../../utils/data'
 import { 
     Container, SimpleGrid, Flex, Image, Heading, Stack, Box, Text, 
     useColorModeValue, Button } from '@chakra-ui/react'
-import Products from '../../components/Products'
+import Products from '../../components/Product'
 
  const ProductPage = () =>{
 
