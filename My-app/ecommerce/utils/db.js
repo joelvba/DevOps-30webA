@@ -34,7 +34,7 @@ async function connect() {
     doc._id = doc._id.toString() // convierte el valor de la propiedad "_id" a una cadena o string
     doc.createdAt = doc.createdAt.toString() // convierte el valor de la propiedad "createdAt" a una cadena o string
     doc.updatedAt = doc.updatedAt.toString() // convierte el valor de la propiedad "updatedAt" a una cadena o string
-    return doc // devuelve el objeto modificado
+    return doc // devuelve el objeto modificado---- nodemon --legacy-watch utils/db.js
   }
   
   const db = { connect, disconnect, convertDocToObj }
