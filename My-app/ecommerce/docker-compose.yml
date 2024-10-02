@@ -26,7 +26,6 @@ services:
       - NODE_ENV
       - MONGO_INITDB_ROOT_USERNAME
       - MONGO_INITDB_ROOT_PASSWORD
-      - ME_CONFIG_MONGODB_URL
       - MONGODB_URI
 
 
