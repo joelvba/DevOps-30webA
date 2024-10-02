@@ -3,9 +3,9 @@ export const data = {
     produc:[
         {
             id:1,
-            title:'Product 1',
+            title:'Acer',
             price:100,
-            descripcion: 'Producto',
+            descripcion: 'Laptop Acer',
             image:'/Acer.jpg'
             
 
@@ -15,9 +15,9 @@ export const data = {
 
         {
             id:2,
-            title:'Product 2',
+            title:'Apple',
             price:200,
-            descripcion: 'Producto',
+            descripcion: 'Laptop Apple',
             image:'/Apple.jpg'
 
         },
@@ -26,9 +26,9 @@ export const data = {
     
         {
             id:3,
-            title:'Product 3',
+            title:'Dell',
             price:300,
-            descripcion: 'Producto',
+            descripcion: 'Laptop Dell',
             image:'/Dell_5620f.avif'
 
         },
@@ -37,42 +37,42 @@ export const data = {
     
         {
             id:4,
-            title:'Product 4',
+            title:'Dell Pro',
             price:400,
-            descripcion: 'Producto',
+            descripcion: 'Laptop Dell Pro',
             image:'/Dell.jpg'
 
         },
 
         {
             id:5,
-            title:'Product 5',
+            title:'Game Acer',
             price:500,
-            descripcion: 'Producto',
+            descripcion: 'Laptop Game Acer',
             image:'/Gaming_Acer.jpg'
 
         },
         {
             id:6,
-            title:'Product 6',
+            title:'Lenovo Pad',
             price:600,
-            descripcion: 'Producto',
+            descripcion: 'Laptop Lenovo Pad',
             image:'/Lenovo_ideaPad.avif'
 
         },
         {
             id:7,
-            title:'Product 7',
+            title:'Lenovo',
             price:700,
-            descripcion: 'Producto',
+            descripcion: 'Laptop Lenovo',
             image:'/lenovo.avif'
 
         },
         {
             id:8,
-            title:'Product 8',
+            title:'Samsug',
             price:800,
-            descripcion: 'Producto',
+            descripcion: 'Laptop Samsug',
             image:'/Samsug.jpg'
 
         },
