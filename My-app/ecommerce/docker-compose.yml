@@ -9,11 +9,11 @@ services:
      - MONGO_INITDB_ROOT_PASSWORD: password
 
 
-db: 
+index: 
   build:
     context: .
   volumes:
-    - ./utils: /db
+    - ./pages: /index
   ports:
     - '3000:3000'
   depends_on:
