@@ -7,21 +7,26 @@ services:
     environment:
      - MONGO_INITDB_ROOT_USERNAME: joel
      - MONGO_INITDB_ROOT_PASSWORD: password
+    volumes: 
+      - ./database:/data/db
+      - ./ddl:/ddl
 
 
-hello: 
-  build:
-    context: .
-  volumes:
-    - ./pages/api: /hello.js
-  ports:
-    - '3000:3000'
-  depends_on:
-   - 'mongo'
-  environment:
-    - MONGO_INITDB_ROOT_USERNAME:
-    - MONGO_INITDB_ROOT_PASSWORD: 
-    - ME_CONFIG_MONGODB_URL: mongodb://localhost/ecommerce-full-stack
-    - ME_CONFIG_BASICAUTH: false
+  db: 
+    build:
+      context: .
+    volumes:
+      - ./utils:/db
+      - ./devLogs:/logs
+    ports:
+      - '3000:3000'
+    depends_on:
+    - 'mongo'
+    environment:
+      - NODE_ENV
+      - MONGO_INITDB_ROOT_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD
+      - ME_CONFIG_MONGODB_URL
+      - MONGODB_URI
 
 
