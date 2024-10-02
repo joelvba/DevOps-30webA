@@ -1,9 +1,10 @@
-import layout from "../components/layout"
+import Products from "../components/Product"
 
 export default function Home() {
   return (
     <>    
-      <layout></layout>
+        <Products/>
+
     </>
   )
 }
