@@ -13,7 +13,7 @@ hello:
   build:
     context: .
   volumes:
-    - ./pages/api: /hello
+    - ./pages/api: /hello.js
   ports:
     - '3000:3000'
   depends_on:
