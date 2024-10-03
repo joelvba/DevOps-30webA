@@ -45,7 +45,7 @@ const Layouts = ({children}) => {
                         <Text
                              fontFamily={'heading'}
                              color={useColorModeValue('gray.800', 'white')}
-                         >Logo</Text>
+                         >CompSulucion</Text>
                     </Flex>    
                         <Stack
                          flex={{base:1, md:0}}
