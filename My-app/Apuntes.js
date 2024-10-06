@@ -1,4 +1,5 @@
 /*
+s
 docker pull mongo
 docker create -p27017:27017 --name monguito -e MONGO_INITDB_ROOT_USERNAME=joel -e MONGO_INITDB_ROOT_PASSWORD=password mongo
 docker start monguito
