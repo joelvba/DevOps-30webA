@@ -1,4 +1,8 @@
 FROM node:18-alpine
+WORKDIR /ecommerce
 COPY package.json ./
 RUN npm install
-CMD ["npm", "run", "dev"]
+COPY . .
+RUN npm run build
+EXPOSE 3000
+CMD ["npm","run","dev"]
