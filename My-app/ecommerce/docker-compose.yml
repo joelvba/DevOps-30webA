@@ -9,21 +9,23 @@ services:
      - MONGO_INITDB_ROOT_PASSWORD
     volumes: 
       - ./database:/data/db
+    ports:
+      - '27017:27017'
 
   ecommerce: 
     build:
       context: .
     volumes:
-      - ./utils:/db
+      - ./pages:/pages/app
       - ./devLogs:/logs
     ports:
       - '3001:3000'
     depends_on:
     - 'mongo'
     environment:
-      - NODE_ENV
       - MONGO_INITDB_ROOT_USERNAME
       - MONGO_INITDB_ROOT_PASSWORD
       - MONGODB_URI
+
 
 
