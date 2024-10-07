@@ -14,7 +14,7 @@ async function connect() {
       return
     }
   
-    const db = await mongoose.connect(process.env.MONGODB_URI)
+    const db = await mongoose.connect(process.env.MONGODB_URI ,{ useNewUrlParser: true, useUnifiedTopology: true })
     console.log("nueva conexión 😃");
     connection.isConnected = db.connections[0].readyState
   }
