@@ -11,6 +11,8 @@ services:
       - ./database:/data/db
     ports:
       - '27017:27017'
+    networks:
+      - ecommerce-network
 
   ecommerce: 
     build:
@@ -25,7 +27,12 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME
       - MONGO_INITDB_ROOT_PASSWORD
-      - MONGODB_URI
+      - MONGODB_URI=mongodb://mongo:27017/ecommerce-full-stack
+    networks:
+      - ecommerce-network
+networks:
+  ecommerce-network:
+    driver: bridge
 
 
 
