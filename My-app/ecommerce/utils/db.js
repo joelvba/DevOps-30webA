@@ -13,8 +13,7 @@ async function connect() {
         console.log("Usuario ya conectado 💻");
       return
     }
-  
-    const db = await mongoose.connect(process.env.MONGODB_URI ,{ useNewUrlParser: true, useUnifiedTopology: true })
+     const db = await mongoose.connect(process.env.MONGODB_URI ,{ useNewUrlParser: true, useUnifiedTopology: true, serverSelectionTimeoutMS: 30000 })
     console.log("nueva conexión 😃");
     connection.isConnected = db.connections[0].readyState
   }
