@@ -57,7 +57,7 @@ export const data = {
             title:'Lenovo Pad',
             price:600,
             descripcion: 'Laptop Lenovo Pad',
-            image:'/Lenovo_ideaPad.avif'
+            image:'/Lenovo.jpeg'
 
         },
         {
