@@ -86,18 +86,6 @@ import { AmpContext } from 'next/dist/server/future/route-modules/app-page/vendo
 
     }  
 
-    export async function getServerSideProps(){
-        const {params} = context
-        const {id} = params
-        await db.connect()
-        const product = await Products.findOne({id}).lean()
-        await db.disconnect()
-        return{
-           props: {
-            product:db.convertDocToObj(product)
-           }
-        }
-
-    }
+    
  
  export default ProductPage
